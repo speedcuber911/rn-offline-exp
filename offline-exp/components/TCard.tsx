@@ -35,12 +35,11 @@ const styles = StyleSheet.create({
     alignItems: "flex-start",
   },
   right: {
-    flex: 1,
+    flex: 2,
     flexDirection: "column",
     alignItems: "flex-end",
   },
   leftText: {
-    fontFamily: "AmazonEmber",
     fontSize: 15,
     fontWeight: "bold",
     fontStyle: "normal",
@@ -48,7 +47,6 @@ const styles = StyleSheet.create({
     color: "#444d4d",
   },
   rightText: {
-    fontFamily: "AmazonEmber",
     fontSize: 13,
     fontWeight: "normal",
     fontStyle: "normal",

@@ -3,8 +3,8 @@ import { Text, View, StyleSheet, Image } from "react-native";
 import { LinearGradient } from "expo-linear-gradient";
 
 const backendData = {
-  aggregated_amount: 1234.56,
-  transaction_count: 3,
+  aggregated_amount: "1202.50",
+  transaction_count: "17",
 };
 
 const TSummary = () => (

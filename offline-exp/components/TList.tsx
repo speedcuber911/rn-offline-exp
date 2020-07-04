@@ -161,7 +161,7 @@ const backendTransactionData = {
     ],
   };
   
-  const TList = () => {
+  const TList = ({navigation} : any) => {
     const dataarray = Object.keys(backendTransactionData).map((key) => ({
       title: key,
       data: backendTransactionData[key],
@@ -173,7 +173,7 @@ const backendTransactionData = {
         renderItem={({ item }) => (
           <TouchableOpacity 
           activeOpacity={0.3}
-          onPress={() => (console.log())}>
+          onPress={() => navigation.navigate('TDetailsScreen', {item: item})}>
             <TCard item={item} />
           </TouchableOpacity>
         )}
@@ -190,7 +190,6 @@ const backendTransactionData = {
             <Text
               style={{
                 opacity: 0.2,
-                fontFamily: "AmazonEmber",
                 fontSize: 13,
                 fontWeight: "bold",
                 fontStyle: "normal",
